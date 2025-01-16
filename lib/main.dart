@@ -39,6 +39,7 @@ class _MyHomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        centerTitle: true, // Centraliza o título
         title: Text(widget.title),
       ),
       body: Center(
@@ -69,17 +70,10 @@ class _MyHomePageState extends State<HomePage> {
                     child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 193, 116, 252), // Corrigido para color
+                        color: const Color.fromARGB(255, 193, 116, 252),
                         borderRadius: BorderRadius.circular(20),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Color.fromARGB(101, 0, 0, 0),
-                            blurRadius: 15,
-                            offset: Offset(0, 5),
-                          )
-                        ]
                       ),
-                      child: const Text('Meu Aplicativo'),
+                      child: const Text(' Ah vai, ficou bonitinho (pra compensar o trabalhão que deu haha)...'),
                     ),
                   ),
                   Expanded(
@@ -106,3 +100,4 @@ class _MyHomePageState extends State<HomePage> {
     );
   }
 }
+
